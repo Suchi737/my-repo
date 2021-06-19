@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="home" routerLinkActive="active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="now-playing" routerLinkActive="active">Now Playing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="upcoming" routerLinkActive="active">Upcoming</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="latest" routerLinkActive="active">Latest</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>

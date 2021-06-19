@@ -1,0 +1,29 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4 mb-2">
+    <input class="form-control mr-sm-2" [(ngModel)]="searchWord" (change)="onSearchWord($event.target.value)" type="search" placeholder="Search" aria-label="Search">
+    </div>  
+    <div class="col-md-4 mb-2">
+    <button class="btn btn-outline-primary" type="submit" (click)="onSearch(searchWord)">Search</button>
+</div>
+    </div>
+    <h5 class="mt-2">Popular Movies</h5>
+    <div class="row">
+        <div class="col-md-4 col-lg-3" *ngFor="let movie of movies;let i = index">
+
+            <div class="card-deck h-100">
+                <div class="card movie-card" (click)="onMovieDetails(movie)">
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}" alt="movie">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ movie.original_title }}</h5>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <span class="info">{{ movie.release_date }}</span>
+                        <span class="info float-right"><i class="fa fa-star"></i> {{ movie.vote_average }}</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+.container{
+    background: #f1f1f1; 
+    padding: 10px;
+}
+
+.genres{
+    display: inline-block;
+    border: 1px solid rgb(238, 235, 235);  
+    margin: 3px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    background-color: rgb(238, 235, 235);
+    
+}
+.title{
+    color: gray;
+}
+

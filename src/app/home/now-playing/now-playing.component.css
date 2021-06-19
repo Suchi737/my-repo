@@ -1,0 +1,24 @@
+img {
+    pointer-events: none;
+  }
+  .movie-card{
+    padding: 0 !important;
+    margin:14px; 
+    border-radius: 10px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+  }
+
+  .info{
+    color: #5e5c5c;
+  }
+
+  .info i{
+    font-size: 20px;
+    color: #ffd700;
+  }
+
+  .card-title{
+      text-align: center;
+  }
+  
